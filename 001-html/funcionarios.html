@@ -3,7 +3,7 @@
 <html lang="br" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Cadastro de Clientes - WebPrint</title>
+    <title>Cadastro de Funcionários - WebPrint</title>
   </head>
   <body>
     <h1>
@@ -12,8 +12,8 @@
       Clientes
     </h1>
 
-    <form action="paginainicial.html" method="post">
-      <fieldset> <legend>DADOS DO CLIENTE</legend>
+    <form action="paginaInicial.html" method="post">
+      <fieldset> <legend>DADOS DO FUNCIONÁRIO</legend>
 
       <br>
 
@@ -37,10 +37,17 @@
 
       <br><br>
 
-      <label for="cnpj" id="labelCNPJ">CNPJ:</label>
-      <input type="number" name="cnpj" id="cnpj" placeholder="CNPJ" value="">
+      <label>Gênero:</label>
+        <br>
+          <input type="radio" id="feminino" name="genero" value="F">
+          <label for="feminino">Feminino</label>
+          <input type="radio" id="masculino" name="genero" value="M">
+          <label for="masculino">Masculino</label>
+          <input type="radio" id="naoinformou" name="genero" value="NI">
+          <label for="naoinformou">Não Informou</label>
 
       <br><br>
+
 
       <label for="email" id="labelEmail">Email:</label>
       <input type="email" name="email" id="email" placeholder="cliente@cliente.com" value="">

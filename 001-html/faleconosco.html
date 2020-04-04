@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fale Conosco - WebPrint</title>
+  </head>
+  <body>
+    <h1>
+      <img src="LogoW.png" alt="webprint" width="140" height="85">
+      <br>
+      Fale Conosco
+    </h1>
+
+    <form action="paginainicial.html" method="post">
+      <label for="nome" id="labelNome">Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="nome" value="" >
+
+      <br><br>
+
+      <label for="email" id="labelEmail">Email:</label>
+      <input type="email" name="email" id="email" placeholder="email@email.com" value="">
+
+      <br><br>
+
+      <label for="telefone" id="labelTel">Telefone:</label>
+      <input type="tel" name="telefone" placeholder="telefone" value="">
+
+      <br><br>
+
+      <label for="cidade">Cidade:</label>
+        <select name="cidade" id="cidade">
+          <option disabled selected value="0">Selecione</option>
+          <option value="1">João Monlevade</option>
+          <option value="2">Belo Horizonte</option>
+          <option value="3">São Paulo</option>
+          <option value="4">Salvador</option>
+          <option value="5">Porto Alegre</option>
+          <option value="6">Rio de Janeiro</option>
+          <option value="7">Curitiba</option>
+        </select>
+
+      <label for="estado">Estado:</label>
+        <select name="estado" id="estado">
+          <option disabled selected value="0">Selecione</option>
+          <option value="1">MG</option>
+          <option value="2">RJ</option>
+          <option value="3">SP</option>
+          <option value="4">RS</option>
+          <option value="5">PR</option>
+          <option value="6">BA</option>
+          <option value="7">AM</option>
+        </select>
+
+        <br><br>
+
+        <label for="mensagem" id="labelMensagem">Deixe sua mensagem:</label>
+          <br>
+          <textarea name="mensagem" rows="4" cols="40"></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Enviar">
+
+        <br><br><br>
+
+    </form>
+
+
+
+
+
+  </body>
+</html>

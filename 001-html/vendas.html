@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pedido de Vendas - WebPrint</title>
+  </head>
+  <body>
+    <h1>
+      <img src="LogoW.png" alt="webprint" width="140" height="85">
+      <br>
+      Pedidos de Vendas
+    </h1>
+
+    <form action="paginainicial.html" method="post">
+      <fieldset><legend>DADOS DO PEDIDO</legend>
+
+        <br>
+
+        <label for="cliente" id="labeCliente">Cliente:</label>
+        <input type="text" name="cliente" id="cliente" placeholder="cliente" value="" >
+
+        <br><br>
+
+        <label for="telefone" id="labelTel">Telefone:</label>
+        <input type="tel" name="telefone" placeholder="telefone" value="">
+
+        <br><br>
+
+        <label for="emailCliente" id="labelEmail">Email:</label>
+        <input type="emailCliente" name="emailCliente" id="emailCliente" placeholder="cliente@cliente.com" value="">
+
+        <br><br>
+
+        <label for="endereco" id="labelEndereco">Endereço</label>
+        <input type="text" name="endereco" id="endereco" placeholder="endereço" value="">
+
+        <br><br>
+
+        <label for="funcionario">Funcionário:</label>
+          <select name="funcionario" id="funcionario">
+            <option disabled selected value="0">Selecione</option>
+            <option value="1">Fernando</option>
+            <option value="2">Ana</option>
+            <option value="3">Maria</option>
+            <option value="4">Carlos</option>
+            <option value="5">Erica</option>
+          </select>
+
+        <br><br>
+
+        <label for="situacao">Situação:</label>
+          <select name="situacao" id="situacao">
+            <option disabled selected value="0">Selecione</option>
+            <option value="1">Emitido</option>
+            <option value="2">Aguardando pagamento</option>
+            <option value="3">Em produção</option>
+            <option value="4">Expedição</option>
+            <option value="5">Finalizado</option>
+            <option value="6">Cancelado</option>
+          </select>
+
+        <br><br>
+
+        <label for="descricao" id="labelDescricao">Descrição do Pedido:</label>
+          <br>
+          <textarea name="descricao" rows="3" cols="35"></textarea>
+
+        <br><br>
+
+        <label for="produto">Produto:</label>
+          <select name="produto" id="produto">
+            <option disabled selected value="0">Selecione</option>
+            <option value="1">Adesivo</option>
+            <option value="2">Banner</option>
+            <option value="3">Crachá</option>
+            <option value="4">Placa PVC</option>
+            <option value="5">Plotagem</option>
+            <option value="6">Impressão Colorida</option>
+            <option value="6">Impressão Preto e Branco</option>
+            <option value="6">Placa Acrílico</option>
+          </select>
+
+        <br><br>
+
+        <label for="quantide" id="labelQuantidade">Quantidade:</label>
+        <input type="number" name="quantidade" id="quantidade" value="">
+
+        <br><br>
+
+        <label for="data" id="labelDataEntrega">Data de Entrega:</label>
+        <input type="date" name="data" id="data">
+
+        <br><br>
+
+        <input type="submit" value="Salvar">
+
+        <br><br>
+
+      </fieldset>
+    </form>
+  </body>
+</html>

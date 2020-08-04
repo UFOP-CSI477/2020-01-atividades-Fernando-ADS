@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contas a pagar - WebPrint</title>
+  </head>
+  <body>
+    <h1>
+      <img src="LogoW.png" alt="webprint" width="140" height="85">
+      <br>
+      Orçamentos
+    </h1>
+
+    <form action="paginainicial.html" method="post">
+      <fieldset><legend>DADOS DO DÉBITO</legend>
+        <br>
+
+        <label for="fornecedor">Fornecedor:</label>
+          <select name="fornecedor" id="fornecedor">
+            <option disabled selected value="0">Selecione</option>
+            <option value="1">Tambasa</option>
+            <option value="2">Serilon</option>
+            <option value="3">DBrasil</option>
+            <option value="4">MagicTonner</option>
+          </select>
+
+        <br><br>
+
+        <label for="valorTotal" id="labelValorT">Valor Total:</label>
+        <input type="text" name="valorTotal" id="valorTotal" placeholder="R$" value="">
+
+        <br><br>
+
+        <label for="valorFaltante" id="labelValorFaltante">Valor Faltante:</label>
+        <input type="text" name="valorFaltante" id="valorFaltante" placeholder="R$" value="">
+
+        <br><br>
+
+        <label for="produto">Produto:</label>
+          <select name="produto" id="produto">
+            <option disabled selected value="0">Selecione</option>
+            <option value="1">Adesivo</option>
+            <option value="2">Banner</option>
+            <option value="3">Crachá</option>
+            <option value="4">Placa PVC</option>
+            <option value="5">Plotagem</option>
+            <option value="6">Impressão Colorida</option>
+            <option value="6">Impressão Preto e Branco</option>
+            <option value="6">Placa Acrílico</option>
+          </select>
+
+        <br><br>
+
+        <label for="prazoPagamento" id="labelPrazoPagamento">Prazo para pagamento:</label>
+        <input type="number" name="prazoPagamento" id="prazoPagamento" value=""> dias
+
+        <br><br>
+
+        <input type="submit" value="Salvar">
+        <input type="reset" value="Limpar">
+
+        <br><br>
+
+      </fieldset>
+    </form>
+  </body>
+</html>
